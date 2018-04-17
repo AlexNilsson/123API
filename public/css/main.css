@@ -1,0 +1,46 @@
+body {
+  background-color:#333;
+  background-image: url(/img/dojo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#title {
+  margin-top: 3vh;
+  font-size: 4.5rem;
+}
+
+#rules {
+  background-color: #402a1d;
+  padding: 30px;
+  left: auto;
+  right: auto;
+}
+
+.bar {
+  height: 90vh;
+  background: #28201a;
+  width: 6vw;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 80px;
+  margin-top: 2vh;
+  position: relative;
+}
+
+.bar-fill {
+  background-color: #d04224;
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  -webkit-transition: height 0.1s; /* Safari */
+  transition: height 0.1s;
+}
+
+.hidden {
+  display:none !important;
+}

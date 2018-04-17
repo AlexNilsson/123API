@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <main role="main" class="container text-center text-white">
+            <div>
+
+                <div class="row">
+
+                    <div class="col-2">
+                        <div id="p1-score" class="bar"><div class="bar-fill"></div></div>
+                    </div>
+                    <div class="col-8">
+                        <h1 id="title"> NIM Face-off</h1>
+                        <div id="rules">
+                            <p class="font-italic">
+                                "<a href="https://en.wikipedia.org/wiki/Nim">Nim</a> is a mathematical game of strategy in which two players take turns removing objects from distinct heaps. On each turn, a player must remove at least one object, and may remove any number of objects provided they all come from the same heap. The goal of the game is to avoid being the player who must remove the last object."
+                            </p>
+                            <img src="img/nim.jpg" alt="">
+
+                            <h2>Setup:</h2>
+                            <p>
+                                3 heaps with random values 0 to <span id="heapSize">1000</span>
+                            </p>
+                            <p>
+                                The player with most games won after <span id="nGames">1000</span> games win!<br>
+
+                                If the two players are within <span id="winTolerance">10%</span> of each other, the winner is determined by highest W/t score (wins per unit time).<br>
+
+                                A player who cheates is disqualified and can not win.<br>
+                            </p>
+                        </div>
+                        <div>
+                            <table class="table table-dark">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>Wins</th>
+                                        <th>Losses</th>
+                                        <th>W/L</th>
+                                        <th>Cheated</th>
+                                        <th>Time</th>
+                                        <th>W/t</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="resultsTable"></tbody>
+                            </table>
+                        </div>
+                        <button type="button" id="startButton" class="btn btn-primary btn-lg btn-block">Fight!</button>
+                    </div>
+                    <div class="col-2">
+                        <div id="p2-score" class="bar"><div class="bar-fill"></div></div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                        <div class="col-2">
+                            <h1><span id="player-1">Player 1</span></h2>
+                        </div>
+                        <div class="col-8">
+                            <h1>VS</h1>
+                        </div>
+                        <div class="col-2">
+                            <h1><span id="player-2">Player 2</span></h2>
+                        </div>
+                    </div>
+            </div>
+
+        </main>
+
+
+        <script src="testfunc.js"></script>
+
+        <script src="js/Axel/convnet.js"></script>
+        <script src="js/Axel/main.js"></script>
+        <script src="js/Axel/savedNetwork.js"></script>
+        <script src="js/Axel/game.js"></script>
+
+        <script src="js/Player.js"></script>
+        <script src="js/Game.js"></script>
+        <script src="js/GameManager.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/Tests.js"></script>
+
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        -->
+    </body>
+</html>
